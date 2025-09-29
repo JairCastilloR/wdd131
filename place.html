@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+    <head>  
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>WDD 131 - Dynamic Web Fundamentals - Felix Jair Castillo Rojas</title>       
+        <meta name="description" content="This is my first project for the WDD 131 - Dynamic Web Fundamentals course. This page contains an introduction about me and some web development resources.">
+        <meta name="author" content="Felix Jair Castillo Rojas">       
+        <link rel="stylesheet" href="styles/place.css">
+        <script src="scripts/place.js" defer></script>       
+        <script src="scripts/getdates.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">       
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>       
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    </head>   
+    <body>       
+        <header>           
+            <h1>Chiclayo</h1>
+            <div></div>
+        </header>
+        <main>                    
+            <section class="hero">
+                <picture>   
+                    <source srcset="images/pimentel.webp" media="(min-width: 520px)">
+                    <source srcset="images/pimentel_mobile.webp" media="(max-width: 519px)">
+
+                    <img src="images/pimentel.webp" alt="pimentel" width="600" height="400"/> 
+                </picture>
+            </section>
+            <section class="data">
+                <div>
+                    <h2>Data</h2>
+                    <div class="card-content">
+                        <p><strong>Área:</strong> 2,966 km²</p>
+                        <p><strong>Población:</strong> ~970,000</p>
+                        <p><strong>Capital:</strong> Chiclayo</p>
+                        <p><strong>Idiomas:</strong> Español</p>
+                        <p><strong>Moneda:</strong> Sol peruano (PEN)</p>
+                        <p><strong>Zona horaria:</strong> UTC-5</p>
+                        <p><strong>Código telefónico:</strong> +51</p>
+                        <p><strong>Dominio de internet (TLD):</strong> .pe</p>
+                    </div>
+                </div>
+            </section>
+            <section class="weather">
+                <div>
+                    <div>
+                        <h2>Weather</h2>
+                        <picture>   
+                            <source srcset="images/clima.svg" media="(width >=800px)" width="30" height="30">
+                            <source srcset="images/weather.svg" media="(width < 800px)" width="200" height="200">
+                            <img src="images/weather.svg" alt="weather" width="30" height="30"/> 
+                        </picture>
+                    </div>
+                    <div class="card-content">
+                        <p><strong>Temperature:</strong> <span id="temperature">N/A</span></p>
+                        <p><strong>Condition:</strong>Partly Cloudy</p>
+                        <p><strong>Wind:</strong> <span id="windspeed">N/A</span></p>
+                        <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+                    </div>
+                </div>
+            </section>
+        </main>      
+        <footer>       
+            <p>
+               <span id="currentyear"></span> | Felix Jair Castillo Rojas | Chiclayo, Peru</p>
+            <p><span id="lastmodified"></span></p>
+        </footer>

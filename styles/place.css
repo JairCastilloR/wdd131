@@ -1,0 +1,119 @@
+:root{
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+    --primary-color: blue;
+    --secondary-color: #50ee29;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {      
+  margin: 0;      
+  display: flex;
+  flex-direction: column;  
+  height: auto;
+  min-height: 100vh;
+  font-family: var(--body-font);
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+main {
+  flex: 1; 
+  position: relative;
+  width: 100%;     
+  overflow: hidden
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 726px;
+    object-fit: cover;
+}
+
+
+header h1{
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1rem;
+	border: 1px solid rgb(0 0 0 / 10%);
+    text-align: center;
+    font-family: var(--heading-font);
+}
+header div{
+    font-size: 20px;
+    color: #ffffff;
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    text-align: center;
+    font-family: var(--body-font);
+}
+
+.data , .weather {
+    font-size: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: var(--body-font);
+    max-width: 250px;
+    border-radius: 10%;
+    padding: 20px;
+}
+.data{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.weather{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-top: 1px solid #ddd;
+}
+footer p {
+    color: #ffffff;
+}
+#lastmodified{
+    font-size: 14px;
+    color:var(--secondary-color)
+}
+#copyright, #currentyear{
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .data, .weather {
+    position: static;      /* se quitan los absolute */
+    margin: 10px auto;     /* centrado */
+    max-width: 90%;        /* ocupan casi todo el ancho */
+  }
+
+  main {
+    display: flex;         /* activamos flexbox */
+    flex-direction: column;/* apilamos verticalmente */
+    align-items: center;   /* centramos horizontal */
+    gap: 1rem;             /* espacio entre secciones */
+  }
+
+  .hero img {
+    max-height: none;      /* que crezca libre */
+  }
+}

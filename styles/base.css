@@ -48,24 +48,6 @@ nav a:hover {
     color: #41d115;
 }
 
-@media (min-width: 640px) {
-	nav ul {
-		display: flex;
-        justify-content:center;
-	}
-}
-
-@media (max-width: 1024px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr; 
-  }
-}
 
 main {
     display: grid;
@@ -148,4 +130,18 @@ footer p {
     font-size: 14px;
     color: #00ff37;
     font-weight: bold;
+}
+
+@media(min-width: 700px) {
+	nav ul {
+		display: flex;
+        justify-content:center;
+	}
+}
+
+@media screen and (max-width: 700px) {
+    .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
