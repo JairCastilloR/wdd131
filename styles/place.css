@@ -68,19 +68,44 @@ header div{
     border-radius: 10%;
     padding: 20px;
 }
-.data{
+
+.data {
     position: absolute;
     top: 0;
     left: 0;
     margin-top: 10px;
     margin-left: 10px;
 }
-.weather{
+
+.weather {
     position: absolute;
     bottom: 0;
     right: 0;
     margin-bottom: 10px;
     margin-right: 10px;
+}
+
+.data h2,
+.weather h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.data h2::after,
+.weather h2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--secondary-color);    
+    z-index: -1;        
+    height: 0%;
+    transition: height 0.3s ease;
+}
+
+.data:hover h2::after,
+.weather:hover h2::after {
+    height: 100%;
 }
 
 
