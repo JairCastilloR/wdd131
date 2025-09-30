@@ -103,8 +103,8 @@ h2{
 .place {
   margin-top: 20px;
   display: flex;
-  align-items: center; /* centra verticalmente */
-  gap: 5px; /* espacio entre p e img */
+  align-items: center;
+  gap: 5px;
 }
 .breackline p{
     font-size: 20px;

@@ -26,12 +26,17 @@ main {
   overflow: hidden
 }
 
+.hero{
+    min-height: 700px;
+}
+
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    min-height: 726px;
     max-height: 726px;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 
@@ -57,7 +62,6 @@ header div{
     font-size: 20px;
     color: #000000;
     background-color: #ffffff;
-    padding: 0.5rem;
     text-align: center;
     font-family: var(--body-font);
     max-width: 250px;
@@ -99,21 +103,21 @@ footer p {
     font-weight: bold;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .data, .weather {
-    position: static;      /* se quitan los absolute */
-    margin: 10px auto;     /* centrado */
-    max-width: 90%;        /* ocupan casi todo el ancho */
+    position: static;     
+    margin: 10px auto;     
+    max-width: 90%;        
   }
 
   main {
-    display: flex;         /* activamos flexbox */
-    flex-direction: column;/* apilamos verticalmente */
-    align-items: center;   /* centramos horizontal */
-    gap: 1rem;             /* espacio entre secciones */
+    display: flex;         
+    flex-direction: column;
+    align-items: center;   
+    gap: 1rem;            
   }
 
   .hero img {
-    max-height: none;      /* que crezca libre */
+    max-height: none;     
   }
 }
