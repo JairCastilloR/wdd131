@@ -3,13 +3,13 @@
     display: block !important; 
     position: static;        
     overflow: visible;
+
   }
   
   #myLinks ul {
     display: flex;
     flex-direction: row; 
     margin: 0;
-   
     justify-content: center;
     align-items: center;
   }

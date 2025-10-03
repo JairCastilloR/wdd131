@@ -73,6 +73,12 @@ main h1{
     font-family: var(--heading-font, sans-serif);
 }
 
+main h2{
+    text-align: center;
+    margin: 16px;
+    font-size: 24px;
+    font-family: var(--heading-font, sans-serif);
+}
 .temples{
     display: grid;
     grid-template-columns: 1fr;
@@ -110,7 +116,7 @@ main h1{
   position: fixed;
   top: 0;
   left: 0;
- 
+ background-color: var(--primary-color);
   overflow-x: hidden;
   transition: 0.5s;
   z-index: 1000;
@@ -174,3 +180,4 @@ footer p {
     color: var(--secondary-color);
     font-weight: bold;
 }
+
