@@ -1,0 +1,35 @@
+@media(min-width: 700px) {
+	#myLinks {
+    display: block !important; 
+    position: static;        
+    overflow: visible;
+  }
+  
+  #myLinks ul {
+    display: flex;
+    flex-direction: row; 
+    margin: 0;
+   
+    justify-content: center;
+    align-items: center;
+  }
+    #menuBtn, #closeBtn {
+        display: none !important;
+    }
+    
+}
+
+@media (min-width: 600px) {
+  .temples {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .temples {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
