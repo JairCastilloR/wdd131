@@ -1,0 +1,218 @@
+:root{
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+    --primary-color: blue;
+    --secondary-color: #50ee29;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  display: flex;                  
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 16px 24px;
+  background-color: var(--primary-color);     
+  color: white;
+}
+
+nav{
+    margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #41d115;
+}
+
+#course-title{
+    color: #41d115;
+}
+
+header a{
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header a.icon {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.brand{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--heading-font, sans-serif);
+}
+
+body {      
+  margin: 0;      
+  display: flex;
+  flex-direction: column;  
+  height: auto;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+main h1{
+    text-align: center;
+    margin: 16px;
+    font-size: 34px;
+    font-family: var(--heading-font, sans-serif);
+}
+
+main h2{
+    text-align: center;
+    margin: 16px;
+    font-size: 24px;
+    font-family: var(--heading-font, sans-serif);
+}
+.temples{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+    justify-items: center; 
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.temples >div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.temples img {
+    width: 300px;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.temples p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#myLinks{
+  height: 100%;
+  width: 0; 
+  position: fixed;
+  top: 0;
+  left: 0;
+ background-color: var(--primary-color);
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+
+#myLinks ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#myLinks ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#myLinks ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  display: block;
+  position: absolute;
+  right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
+    background-color: var(--primary-color);
+    border-top: 1px solid #ddd;
+}
+footer p {
+    color: #ffffff;
+}
+#lastmodified{
+    font-size: 14px;
+    color:var(--secondary-color)
+}
+#copyright, #currentyear{
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+@media(min-width: 700px) {
+	#myLinks {
+    display: block !important; 
+    position: static;        
+    overflow: visible;
+
+  }
+  
+  #myLinks ul {
+    display: flex;
+    flex-direction: row; 
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+    #menuBtn, #closeBtn {
+        display: none !important;
+    }
+    
+}
+
+@media (min-width: 600px) {
+  .temples {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .temples {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
