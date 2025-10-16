@@ -1,4 +1,4 @@
-// Array de productos dado en las instrucciones
+
 const products = [
   { id: "fc-1888",
     name: "flux capacitor",
