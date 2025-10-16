@@ -1,0 +1,118 @@
+:root{
+    --secondary2:#56EF9F;
+    --secondary:#231FEE;
+    --primary:#102fc6;
+    --radius:12px;
+    --maxw:800px;
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  margin: 20px;
+  max-width: 600px;
+  gap: 10px;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  color: var(--primary);
+  text-align: center;
+}
+
+.rating-options {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.required {
+  color: red;
+}
+
+input[type="text"], textarea, select, input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary);
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+footer p {
+    color: #ffffff;
+}
+#lastmodified{
+    font-size: 14px;
+    color: var(--secondary2);
+}
+#currentyear{
+    font-size: 14px;
+    color: var(--secondary2);
+    font-weight: bold;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 40px auto;
+  position: relative;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating > label {
+  width: 30px;
+  height: 30px;
+  font-family: Arial;
+  font-size: 30px;
+  transition: 0.2s ease;
+  color: orange;
+}
+
+.star-rating label:hover {
+  color: #1f1018;
+  transition: 0.2s ease;
+}
+.star-rating label:active::before {
+  transform:scale(1.1);
+}
+
+
+.star-rating label::before {
+  content: '\2606';
+  position: absolute;
+  top: 0px;
+  line-height: 26px;
+}
+
+.star-rating input:checked ~ label:before {
+  content:'\2605';
+}
+
+@-moz-document url-prefix() {
+  .star-rating input:checked ~ label:before {
+  font-size: 36px;
+  line-height: 21px;
+  }
+}  
