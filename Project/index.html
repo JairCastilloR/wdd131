@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Castec — Home</title>
+     <script src="scripts/script.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Castec home"><img src="images/logo.png" alt="Castec logo" /></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="agency.html">Agency</a></li>
+          <li><a href="venture.html">Venture Builder</a></li>
+          <li><a href="#contact" class="ctabutton">Let's Talk</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+   
+    <section class="hero container" id="hero">
+      <h1 class="hero-title">Title</h1>
+      <p class="hero-sub">Sub title</p>
+      <p><a class="btn" href="#who">Let's Talk</a></p>
+    </section>
+
+    
+    <section id="who" class="container who">
+      <h2>Who we are?</h2>
+      <div class="who-grid">
+        <div class="who-image" aria-hidden="true">
+          <img loading="lazy" src="assets/team1.jpg" alt="Imagen representativa" />
+        </div>
+        <div class="who-text">
+          <h3>title</h3>
+          <p>description</p>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="container team">
+      <h2>Our team</h2>
+      <div id="team-grid" class="team-grid" aria-live="polite">
+       
+      </div>
+    </section>
+
+    
+    <section id="contact" class="container contact">
+      <h2>Let's Talk</h2>
+      <form id="contactForm" novalidate>
+        <label for="fullName">Full Name</label>
+        <input id="fullName" name="fullName" type="text" required>
+
+        <label for="company">Company</label>
+        <input id="company" name="company" type="text">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="8" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><img src="images/logo.png" alt="Castec logo" style="height:36px;"></div>
+      <div class="copyright">Copyright &copy; Castec</div>
+    </div>
+  </footer>
+
+</body>
+</html>

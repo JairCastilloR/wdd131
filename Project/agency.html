@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Castec — Agency</title>
+   <script src="scripts/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Castec home"><img src="images/logo.png" alt="Castec logo" /></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="agency.html">Agency</a></li>
+          <li><a href="venture.html">Venture Builder</a></li>
+          <li><a href="#contact" class="ctabutton">Let's Talk</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1 class="hero-title">Software Design and Development</h1>
+      <p><a class="btn" href="#contact">Let's Talk</a></p>
+    </section>
+
+    <section class="container trust">
+      <h2>They trust on us</h2>
+      <div class="clients-grid" id="clients">
+       
+        <div class="client">Company Name</div>
+        <div class="client">Company Name</div>
+        <div class="client">Company Name</div>
+        <div class="client">Company Name</div>
+        <div class="client">Company Name</div>
+        <div class="client">Company Name</div>
+      </div>
+    </section>
+
+    <section class="services container">
+      <div class="panel-large">
+        <h2>Our services</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Branding and Design</h3>
+            <p>Description</p>
+          </article>
+          <article class="service-card">
+            <h3>No Code Development</h3>
+            <p>Description</p>
+          </article>
+          <article class="service-card">
+            <h3>Native-Code Development</h3>
+            <p>Description</p>
+          </article>
+        </div>
+        <p style="text-align:center;"><a class="btn" href="#contact">I want to know more &gt;</a></p>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Let's Talk</h2>
+      <form id="contactForm2" novalidate>
+        <label for="fullName2">Full Name</label>
+        <input id="fullName2" name="fullName" type="text" required>
+
+        <label for="company2">Company</label>
+        <input id="company2" name="company" type="text">
+
+        <label for="message2">Message</label>
+        <textarea id="message2" name="message" rows="8" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><img src="images/logo.png" alt="Castec logo"></div>
+      <div class="copyright">Copyright &copy; Castec</div>
+    </div>
+  </footer>
+
+ 
+</body>
+</html>

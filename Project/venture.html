@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Castec — Venture Builder</title>
+     <script src="scripts/script.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Castec home"><img src="images/logo.png" alt="Castec logo" /></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="agency.html">Agency</a></li>
+          <li><a href="venture.html">Venture Builder</a></li>
+          <li><a href="#contact" class="ctabutton">Let's Talk</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1 class="hero-title">Venture Builder</h1>
+      <p><a class="btn" href="#contact">Let's Talk</a></p>
+    </section>
+
+    <section class="container overview">
+      <div class="big-panel">
+        <h2>Description of what we do</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-img"><img loading="lazy" src="assets/team1.jpg" alt="Project picture"></div>
+            <div class="project-body">
+              <h3>Project 1</h3>
+              <p>Description</p>
+              <a class="btn small" href="#">I want to know more &gt;</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-img"><img loading="lazy" src="assets/team1.jpg" alt="Project picture"></div>
+            <div class="project-body">
+              <h3>Project 2</h3>
+              <p>Description</p>
+              <a class="btn small" href="#">I want to know more &gt;</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-img"><img loading="lazy" src="assets/team1.jpg" alt="Project picture"></div>
+            <div class="project-body">
+              <h3>Project 3</h3>
+              <p>Description</p>
+              <a class="btn small" href="#">I want to know more &gt;</a>
+            </div>
+          </article>
+        </div>
+        <p style="text-align:center;"><a class="btn" href="#">Explore more projects &gt;</a></p>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Let's Talk</h2>
+      <form id="contactForm3" novalidate>
+        <label for="fullName3">Full Name</label>
+        <input id="fullName3" name="fullName" type="text" required>
+
+        <label for="company3">Company</label>
+        <input id="company3" name="company" type="text">
+
+        <label for="message3">Message</label>
+        <textarea id="message3" name="message" rows="8" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><img src="images/logo.png" alt="Castec logo"></div>
+      <div class="copyright">Copyright &copy; Castec</div>
+    </div>
+  </footer>
+
+</body>
+</html>
