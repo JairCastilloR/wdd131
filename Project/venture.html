@@ -4,16 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Castec — Venture Builder</title>
-     <script src="scripts/script.js" defer></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Venture Builder description: Castec builds and invests in innovative technology startups that solve real-world problems and create value for customers and investors.">
+  <script src="scripts/script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Castec home"><img src="images/logo.png" alt="Castec logo" /></a>
-      <nav aria-label="Main navigation">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Castec home"><img src="images/logo_blanco.webp" alt="Castec logo" /></a>
+      <nav aria-label="Main navigation" class="overlay">
+        <a href="javascript:void(0);" id="closeBtn" class="closebtn">&times;</a>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="agency.html">Agency</a></li>
@@ -21,6 +24,7 @@
           <li><a href="#contact" class="ctabutton">Let's Talk</a></li>
         </ul>
       </nav>
+      <a href="javascript:void(0);" id="menuBtn" class="menu-icon">&#9776;</a>
     </div>
   </header>
 
@@ -35,27 +39,27 @@
         <h2>Description of what we do</h2>
         <div class="projects-grid">
           <article class="project-card">
-            <div class="project-img"><img loading="lazy" src="assets/team1.jpg" alt="Project picture"></div>
+            <div class="project-img"><img loading="lazy" src="images/sipma.png" alt="Project picture"></div>
             <div class="project-body">
-              <h3>Project 1</h3>
-              <p>Description</p>
-              <a class="btn small" href="#">I want to know more &gt;</a>
+              <h3>SIPMA</h3>
+              <p>SaaS Project Management Application for Construction Companies in Latin America</p>
+              <a class="btn small" href="https://www.sipma.pro" target="_blank" rel="noopener noreferrer">I want to know more &gt;</a>
             </div>
           </article>
           <article class="project-card">
-            <div class="project-img"><img loading="lazy" src="assets/team1.jpg" alt="Project picture"></div>
+            <div class="project-img"><img loading="lazy" src="images/ades.png" alt="Project picture"></div>
             <div class="project-body">
-              <h3>Project 2</h3>
-              <p>Description</p>
-              <a class="btn small" href="#">I want to know more &gt;</a>
+              <h3>Ades Academy</h3>
+              <p>Gamming and learning platform to prepare young people to pass the university exam to be accepted in the best universities</p>
+              <a class="btn small" href="https://ades.academy" target="_blank" rel="noopener noreferrer">I want to know more &gt;</a>
             </div>
           </article>
           <article class="project-card">
-            <div class="project-img"><img loading="lazy" src="assets/team1.jpg" alt="Project picture"></div>
+            <div class="project-img"><img loading="lazy" src="images/conige.png" alt="Project picture"></div>
             <div class="project-body">
-              <h3>Project 3</h3>
-              <p>Description</p>
-              <a class="btn small" href="#">I want to know more &gt;</a>
+              <h3>CONIGE</h3>
+              <p>We associate with contractor to obtain new construction projects and deliver them to the client. We want to tokenize contracts to facilitiate innvestment</p>
+              <a class="btn small" href="https://conige.pro" target="_blank" rel="noopener noreferrer">I want to know more &gt;</a>
             </div>
           </article>
         </div>
@@ -82,7 +86,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div><img src="images/logo.png" alt="Castec logo"></div>
+      <div><img src="images/logo_blanco.webp" alt="Castec logo"></div>
       <div class="copyright">Copyright &copy; Castec</div>
     </div>
   </footer>

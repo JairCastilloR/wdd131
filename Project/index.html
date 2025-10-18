@@ -4,18 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Castec — Home</title>
-     <script src="scripts/script.js" defer></script>
-  <script src="scripts/getdates.js" defer></script>
- 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+  <meta name="description" content="Castec is a software development agency and venture builder focused on delivering innovative technology solutions to help businesses grow and succeed in the digital age.">
+  <script src="scripts/script.js" defer></script> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Castec home"><img src="images/logo.png" alt="Castec logo" /></a>
-      <nav aria-label="Main navigation">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Castec home"><img src="images/logo_blanco.webp" alt="Castec logo" /></a>
+      <nav aria-label="myLinks" class="overlay">
+        <a href="javascript:void(0);" id="closeBtn" class="closebtn">&times;</a>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="agency.html">Agency</a></li>
@@ -23,14 +24,15 @@
           <li><a href="#contact" class="ctabutton">Let's Talk</a></li>
         </ul>
       </nav>
+      <a href="javascript:void(0);" id="menuBtn" class="menu-icon">&#9776;</a>
     </div>
   </header>
 
   <main>
    
     <section class="hero container" id="hero">
-      <h1 class="hero-title">Title</h1>
-      <p class="hero-sub">Sub title</p>
+      <h1 class="hero-title">We scale your business with cutting-edge technology</h1>
+      <p class="hero-sub">Bussiness and technology solutions to grow your business and reach your goals through digital transformation</p>
       <p><a class="btn" href="#who">Let's Talk</a></p>
     </section>
 
@@ -39,11 +41,13 @@
       <h2>Who we are?</h2>
       <div class="who-grid">
         <div class="who-image" aria-hidden="true">
-          <img loading="lazy" src="assets/team1.jpg" alt="Imagen representativa" />
+          <img loading="lazy" src="images/hero.webp" alt="Imagen representativa" />
         </div>
         <div class="who-text">
-          <h3>title</h3>
-          <p>description</p>
+          <h3>Innovative people</h3>
+          <p> We are a group of people from different countries of Latin America who are passionate about technology and innovation. 
+            Experts in software development and digital transformation using the best practices and tools.<br> 
+            We lead with agile and lean methodologies.</p>
         </div>
       </div>
     </section>
@@ -76,7 +80,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div><img src="images/logo.png" alt="Castec logo" style="height:36px;"></div>
+      <div><img src="images/logo_blanco.webp" alt="Castec logo" style="height:36px;"></div>
       <div class="copyright">Copyright &copy; Castec</div>
     </div>
   </footer>

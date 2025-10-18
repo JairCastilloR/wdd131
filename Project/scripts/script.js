@@ -6,12 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const teamMembers = [
-  { id:1, name:'Alice Miller', position:'CEO', project:'Castec Platform', img:'assets/team1.jpg' },
-  { id:2, name:'Luis Perez', position:'CTO', project:'Product Architecture', img:'assets/team2.jpg' },
-  { id:3, name:'Mina Gomez', position:'Designer', project:'Branding', img:'assets/team3.jpg' },
-  { id:4, name:'Tom Brown', position:'Developer', project:'NoCode Integrations', img:'assets/team4.jpg' },
-  { id:5, name:'Nora White', position:'PM', project:'Venture Builder', img:'assets/team5.jpg' },
-  { id:6, name:'Sam Lee', position:'Engineer', project:'Mobile', img:'assets/team6.jpg' }
+  { id:1, name:'Jair Castillo', position:'CEO', project:'Castec Agency and Venture Builder', img:'images/profile.jpg' },
+  { id:2, name:'Francesca Montibeller', position:'Project Coordinatior', project:'Castec Agency', img:'images/francesca.webp' },
+  { id:3, name:'Esteban Davalos', position:'Senior Developer', project:'Castec Agency', img:'images/esteban.webp' },
+  { id:4, name:'Miguel Revilla', position:'Senior Developer', project:'Castec Agency', img:'images/miguel.webp' },
+  { id:5, name:'Miriam Estrada', position:'Senior Designer', project:'Castec Agency', img:'images/miriam.webp' },
+  { id:6, name:'Joaquín Blanco', position:'Chief Commercial Officer', project:'SIPMA-Venture Builder', img:'images/joaquin.webp' },
+  { id:6, name:'Ana Romero', position:'Customer Success Manager', project:'SIPMA-Venture Builder', img:'images/ana.webp' },
+  { id:6, name:'Acilio Marinello', position:'Advisor', project:'SIPMA-Venture Builder', img:'images/acilio.webp' },
+  { id:6, name:'Ebert Sarango', position:'CEO', project:'Ades Academy-Venture Builder', img:'images/ebert.webp' },
+  { id:6, name:'Luis Lopez', position:'CMO', project:'Ades Academy-Venture Builder', img:'images/luis.webp' }
 ];
 
 function initTeam(){
@@ -121,3 +125,19 @@ function showToast(text){
   t.textContent = text;
   setTimeout(()=>{ t.remove(); }, 3500);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menuBtn");
+  const closeBtn = document.getElementById("closeBtn");
+  const overlay = document.querySelector(".overlay");
+
+  if (menuBtn && closeBtn && overlay) {
+    menuBtn.addEventListener("click", () => {
+      overlay.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      overlay.classList.remove("open");
+    });
+  }
+});

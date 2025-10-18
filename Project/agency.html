@@ -4,15 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Castec — Agency</title>
-   <script src="scripts/script.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Castec is a software development agency specializing in delivering innovative technology solutions to help businesses grow and succeed in the digital age.">
+  <script src="scripts/script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Castec home"><img src="images/logo.png" alt="Castec logo" /></a>
-      <nav aria-label="Main navigation">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Castec home"><img src="images/logo_blanco.webp" alt="Castec logo" /></a>
+      <nav aria-label="Main navigation" class="overlay">
+        <a href="javascript:void(0);" id="closeBtn" class="closebtn">&times;</a>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="agency.html">Agency</a></li>
@@ -20,6 +24,7 @@
           <li><a href="#contact" class="ctabutton">Let's Talk</a></li>
         </ul>
       </nav>
+      <a href="javascript:void(0);" id="menuBtn" class="menu-icon">&#9776;</a>
     </div>
   </header>
 
@@ -33,12 +38,13 @@
       <h2>They trust on us</h2>
       <div class="clients-grid" id="clients">
        
-        <div class="client">Company Name</div>
-        <div class="client">Company Name</div>
-        <div class="client">Company Name</div>
-        <div class="client">Company Name</div>
-        <div class="client">Company Name</div>
-        <div class="client">Company Name</div>
+        <div class="client">Mentori Job - Colombia</div>
+        <div class="client">ON Empresas - Perú</div>
+        <div class="client">Nao Store - Perú</div>
+        <div class="client">Firebox - Perú</div>
+        <div class="client">Pulso Vital - México</div>
+        <div class="client">Hyundai - México</div>
+        <div class="client">Mentis technology - EEUU</div>
       </div>
     </section>
 
@@ -46,15 +52,15 @@
       <div class="panel-large">
         <h2>Our services</h2>
         <div class="services-grid">
-          <article class="service-card">
+          <article class="branding">
             <h3>Branding and Design</h3>
             <p>Description</p>
           </article>
-          <article class="service-card">
+          <article class="nocode">
             <h3>No Code Development</h3>
             <p>Description</p>
           </article>
-          <article class="service-card">
+          <article class="code">
             <h3>Native-Code Development</h3>
             <p>Description</p>
           </article>
@@ -81,7 +87,7 @@
   </main>
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div><img src="images/logo.png" alt="Castec logo"></div>
+      <div><img src="images/logo_blanco.webp" alt="Castec logo"></div>
       <div class="copyright">Copyright &copy; Castec</div>
     </div>
   </footer>
