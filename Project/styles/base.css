@@ -89,7 +89,7 @@ body {
 }
 .team-card img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
   border-bottom: 1px solid #ddd;
 }
@@ -142,7 +142,7 @@ body {
 }
 .project-img img {
   width: 90%;
-  height: 140px;
+  height: 160px;
   object-fit:contain;
   margin-right: 10px;
   margin-left: 10px;
@@ -330,5 +330,10 @@ textarea {
   }
   .menu-icon {
     display: none;
+  }
+}
+@media (max-width: 450px) {
+    .team-card img {
+    height: auto;
   }
 }

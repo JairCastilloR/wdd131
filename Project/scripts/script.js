@@ -12,17 +12,17 @@ const teamMembers = [
   { id:4, name:'Miguel Revilla', position:'Senior Developer', project:'Castec Agency', img:'images/miguel.webp' },
   { id:5, name:'Miriam Estrada', position:'Senior Designer', project:'Castec Agency', img:'images/miriam.webp' },
   { id:6, name:'Joaquín Blanco', position:'Chief Commercial Officer', project:'SIPMA-Venture Builder', img:'images/joaquin.webp' },
-  { id:6, name:'Ana Romero', position:'Customer Success Manager', project:'SIPMA-Venture Builder', img:'images/ana.webp' },
-  { id:6, name:'Acilio Marinello', position:'Advisor', project:'SIPMA-Venture Builder', img:'images/acilio.webp' },
-  { id:6, name:'Ebert Sarango', position:'CEO', project:'Ades Academy-Venture Builder', img:'images/ebert.webp' },
-  { id:6, name:'Luis Lopez', position:'CMO', project:'Ades Academy-Venture Builder', img:'images/luis.webp' }
+  { id:7, name:'Ana Romero', position:'Customer Success Manager', project:'SIPMA-Venture Builder', img:'images/ana.webp' },
+  { id:8, name:'Acilio Marinello', position:'Advisor', project:'SIPMA-Venture Builder', img:'images/acilio.webp' },
+  { id:9, name:'Ebert Sarango', position:'CEO', project:'Ades Academy-Venture Builder', img:'images/ebert.webp' },
+  { id:10, name:'Luis Lopez', position:'CMO', project:'Ades Academy-Venture Builder', img:'images/luis.webp' }
 ];
 
 function initTeam(){
   const grid = document.getElementById('team-grid');
   if(!grid) return;
 
-  const itemsToShow = window.innerWidth < 600 ? 4 : teamMembers.length;
+  const itemsToShow = teamMembers.length;
 
   const html = teamMembers
     .slice(0, itemsToShow)
